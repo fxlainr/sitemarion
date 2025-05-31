@@ -1,0 +1,62 @@
+:root {
+  --cream: #f8f5f0;
+  --gold: #c9a96e;
+  --sage: #8a9a5b;
+  --moss: #4a5d23;
+  --teal: #3e6b6e;
+  --navy: #2c3e50;
+  --brown: #4a4236;
+  --terracotta: #b56357;
+  font-family: Arial, sans-serif;
+}
+body {
+  margin: 0;
+  background-color: var(--cream);
+  color: var(--brown);
+}
+header {
+  background-color: var(--navy);
+  color: white;
+  padding: 1rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+main {
+  padding: 1rem;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.gallery-item {
+  background-color: var(--sage);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+input, textarea {
+  padding: 0.5rem;
+}
+button {
+  padding: 0.5rem;
+  background-color: var(--teal);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
